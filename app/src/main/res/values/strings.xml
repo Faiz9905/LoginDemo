@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">Login Demo</string>
+    <string name="enter_your_login_details">Enter Your Login Details</string>
+    <string name="username">Username</string>
+    <string name="password">Password</string>
+    <string name="button">Button</string>
 </resources>
