@@ -4,4 +4,10 @@
     <string name="username">Username</string>
     <string name="password">Password</string>
     <string name="button">Button</string>
+    <string name="not_a_account_register">Not a account ? Register</string>
+    <string name="pick_a_username">Pick a username</string>
+    <string name="mobile_number">Mobile Number</string>
+    <string name="name">Name :</string>
+    <string name="paasword">Paasword:</string>
+    <string name="register">Register..</string>
 </resources>

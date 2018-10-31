@@ -1,17 +1,20 @@
 package com.example.faizankhan.logindemo;
 
+import android.content.Context;
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.TextView;
 import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
 
     Button btn;
     EditText editUser,editPass;
+    TextView textRegister;
     String userName,PassWord;
 
     int counter = 3;
@@ -20,6 +23,7 @@ public class MainActivity extends AppCompatActivity {
 
         userName = editUser.getText().toString();
         PassWord = editPass.getText().toString();
+
 
         if(userName.equals("admin") && PassWord.equals("admin"))
         {
@@ -39,6 +43,12 @@ public class MainActivity extends AppCompatActivity {
 
         }
     }
+
+    public void method(View v)
+    {
+        Intent register = new Intent(MainActivity.this, Register.class);
+        startActivity(register);
+    }
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -48,8 +58,30 @@ public class MainActivity extends AppCompatActivity {
         editUser = findViewById(R.id.editUser);
         editPass = findViewById(R.id.editPassword);
 
+        textRegister = findViewById(R.id.textRegister);
+
+       /* textRegister.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent register = new Intent(MainActivity.this, Register.class);
+                startActivity(register);
 
 
+            }
+        });
+        */
+
+
+
+
+    }
+
+    public void loginDetailsChecked(View v )
+    {
+        userName = editUser.getText().toString();
+        PassWord = editPass.getText().toString();
+
+        String enterUsername =
 
     }
 }
